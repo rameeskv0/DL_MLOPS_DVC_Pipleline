@@ -1,0 +1,8 @@
+AUGMENTATION: True
+IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model,we can see input shape accepted by VG16 model is [223,224,3],can change according to the model we selecting
+BATCH_SIZE: 16
+INCLUDE_TOP: False      #telling to train only on custom layers,not from scratch
+EPOCHS: 1   
+CLASSES: 2              #target variables count ir we have to classify only into 2 class
+WEIGHTS: imagenet       #image classification model is alreday trained on imagenet to get weights
+LEARNING_RATE: 0.01

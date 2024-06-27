@@ -1,0 +1,288 @@
+steps::
+
+
+1)Create new rep in git as "DL_MLOPS_DVC_Pipleline" and clone it in the internship folder and open that folder in VS code and design the project structure 
+
+DVC stands for "Data Version Control".
+It is an open-source data and machine learning operations (MLOps) tool designed to help data scientists and machine learning engineers manage their data and model files, track changes to their code and data, reproduce experiments, and collaborate more effectively.
+for that we create a dvc.yaml file in the project folder
+We can integrate d/f pipelines and track thier working
+
+
+
+
+PROJECT STRUCTURE DESIGN
+
+
+1)create new file file "template.py" in the main directory and writes the code(template.py will be in the VS code)
+
+2)now push all the files in the GitHub rep DL_MLOPS_DVC_Pipleline
+
+3)now add the required libraries in the requirements.txt file >> tensorflow,pandas etc....(check requirements.txt file in reference rep = "https://github.com/krishnaik06/Chicken-Disease-Classification-Projects")
+
+4)setup setup.py (it will similar for every project,get it from the reference rep)
+
+5)create venv in the project folder bby opening the folder in anaconda prompt ("conda create -n chicken python=3.8 -y") and activate by using "conda activate chicken"
+
+6)inside the venv chicken in the anaconda prompt give "pip install -r requirements.txt" to install all in that
+
+dont forgt to push all the modification into git hub rep
+
+7)set up logging module >> for that go to src/cnnClassifier/__init__.py and write code (available in the reference rep)
+
+8)create a new file "main.py" in the main project directory to check logging is working or not , for that import logging in cnnClassifier there and try to log any info (code is in reference git) and try to run in the anaconda prompt ie "python main.py" will show the sample log created also see new folder is created in project directry as logs
+
+
+logging very important bcs when you deploy your project in cloud or any other ,there will be no terminal to show the errors,so need to create logging
+
+
+9)setuping utils
+
+this is used for when we want to use a function frequently (most frequently used function eg.reading yaml file,load json file) we will defined it in the utils and imported from here ..for that , create a "common.py" file inside the utils folder in src/cnnClassifier where we will define all utility code (code is in the reference rep's common.py file)
+
+
+
+10)now to goto research/trails.ipynb file to check function(eg:configBox fn written in common.py ie used to change dict calling >>d[key] to d.key) 
+utils working (code is in the ref rep)
+
+we write configbox fn to access the content yaml file in such a way
+
+
+11)Copy the workflow from the ref rep and paste it in in the readme file,
+and follow that workflow starting from update config.yaml ie  start writing code in all of them (copy from ref rep and paste in appropriate yaml files)
+
+12)update code upto main.py mentioned in the workflow ,ie data ingestion part is completed.Can see chicken-fecal-images in the artifacts/data-ingestion folder
+
+13) want to complete all pipleline before updating dvc.yaml
+
+14)Data ingested in bigger in size,so we need to ignore it,for that goto ".gitignore" file and
+    add "artifacts/*" in the last and save it ie telling to ignore all in the artifacts folder
+
+15) Now create "02_prepare_base_model.ipynb" file in the resource folder to create the model to train
+
+    >now first we need to set is config.yaml as per the workflow but is already set by copying the code , can see "prepare_base_model:" in the cofig.yaml file
+    we will not do config.yaml in the jupyter experiment
+    so we go to the params.yaml as per the workflow ie params need to train the model (VG16)(epoch,batch_sizeetc..)
+    instead of giving as hardcoded in the model or component give it as separate,bcs whenever we want change anything can change it from here
+
+    (The VGG16 model is a convolutional neural network (CNN) architecture that was designed by the Visual Graphics Group at Oxford University and was one of the significant breakthroughs in the field of computer vision. VGG16 stands out for its simplicity and depth, consisting of 16 layers (13 convolutional layers and 3 fully connected layers))
+
+    >now setup entity ..for that in the 02_prepare_base_model file give PrepareBaseModelConfig class and also
+    setup "prepare_base_model:" in the config.yaml
+
+    in this we download the trained model and add some custome layer in it and save it as base_model_updated.h5
+
+    >now setup configuration for that import read_yaml and constants in the 02_prepare_base_model.ipynb
+    and give ConfigurationManager class there give "get_prepare_base_model_config" function inside the class
+    
+    this is the code to initialise the configuration to prepare the model
+
+    >now import tensorflow in which we wall vg16 model and define a "PrepareBaseModel" class and define a function to create the vg16 model (will download from keras application)
+    and give the code to save the model in the same function
+    also give "def _prepare_full_model" function to add some custom layer and  to the save model in the artifacts
+    this updated model will be used to train our Data
+
+    >> now need to setup the pipleline as per the workflow
+    for that in the "02_prepare_base_model.ipynb" give the code to call the all functions in the class
+    this pipeline will download vg16 model and add custom layer and save the updated model
+
+    >>if it is creating succesfully , now we want to do all this process in a modular coding in a python file ,instead of jupyter notebook
+
+    >>for that we go back to workflow start from the entity(config.yaml and params.yaml are already updated)>> 
+    goto entity folder >> config_entity.py and cope the entity code (class PrepareBaseModelConfig:...root_dir ,,) from 02_prepare_base_model.ipynb and paste there
+
+    >> now need to update ConfigurationManager , for that goto configuration.py and copy the ConfigurationManager code from "02_prepare_base_model.ipynb" and paste here
+    need to paste only get_prepare_base_model_config method  rest class  is already there written for data ingestion
+    do not forget to import "PrepareBaseModelConfig" in there
+
+    >> now need to update compenents folder as per the workflow , for that go to components folder and create a new file as  "prepare_base_model.py"
+    copy the code from "02_prepare_base_model.ipynb" to create model and paste there 
+    also dont forget to import from cnnClassifier.entity.config_entity import PrepareBaseModelConfig and from pathlib import Path
+
+    >>now need to update the pipeline folder , goto pipeline folder and create new file as "stage_02_prepare_base_model.py"
+    copy the last code from "02_prepare_base_model.ipynb" to create pipeline or
+    copy the code to create the pipeline from reference rep /src/cnnClassifier/pipeline/stage_02_prepare_base_model.py file 
+    and paste it here
+
+    and call the pipeline function from there itself under if __name__=="__main__" fn and execute it
+
+    >>for execution goto main.py import PrepareBaseModelTrainingPipeline from stage_02_prepare_base_model there
+    and give the code to execution of pipeline under the data_ingestion
+
+
+    before the execution of main.py try to delete artifacts folder and run main.py(data ingestion and base moddel creation will be done in a new artifacts folder)
+
+
+    push the changes to github
+
+
+
+
+16)now we goto our next compenent >> prepare callbacks which is needed for the classification activity metadata storage
+whenever we image Classification using keras and whenever you are training your model we want to store some metadata
+in a callbacks folder where we can see the training activity,from where we can find our best model after some epochs
+and also can stop the epoch if it is not concluding
+
+    >> for that start with notebook experiment and if it is working do it in modular code 
+
+    >>create a new file as "03_prepare_callbacks.ipynb" in the research folder 
+    as per the workflow we need to set config.yaml file , can see "prepare_callbacks:" in the config.yaml
+    we will not do the config.yaml sampling in the notebook.
+
+    can see its creating some checkpoint from where we can resume our training
+
+    >>now we setup entity in our "03_prepare_callbacks.ipynb" file and initialise callbacks things there 
+    inside a prepareCallbacks class (copy the code from reference rep)
+
+
+    >> now we setup configuration manager , for that import read_yaml,create_directories in the "03_prepare_callbacks.ipynb" as we done for data_ingestion and prepare_base_model
+    and write the ConfigurationManager class and isnide that class write the function to create callbacks
+
+
+
+    >> next we need to setup the compenents , in the notebook itself import the needflu libraries and
+    create callbacks functions (taken from tensorflow website) 
+
+    >>atlast set the pipeline by calling all functions in the notebook istelf
+
+
+    As we done in data ingestion and prepare_base_model we do the same modular coding by giving codes in appropriate file from 
+    "03_prepare_callbacks.ipynb" starting from entity/config_entity.py upto pipeline/stage_03_prepare_callbacks.py and call all by giving code
+     in the main.py
+
+
+    but here we do not not create the pipeline by giving in the .py and main.py instead we call it after the training pipleline
+    which we will create later
+
+
+
+17)now we goto model training part.do all the steps as we done for data_ingestion,prepare_base_model,callbacks
+from notebook experiment then if it is succesfull , do it in modular coding,and execute by main.py
+
+    >>here we create a model which we will use for prediction
+
+
+18)Now we goto our last compenent pipeline ie model evaluation , do the same process
+
+    its doesnt need any file creation,so we did nt do any config.yaml setup
+    
+    >>while running the pipeline after including the evaluation stage try to run main.py after deleting artifacts folder and score.json file
+
+
+
+19)now all the pipeline is ready(except prediction pipeline),now we can set DVC yaml file to integrate all pipelines.
+    >every time we run main.py we can run all pipleline,and its taking more time so tp reduce that and track our pipleline we will use DVC
+    >for that goto dvc.yaml file and paste the code from ref rep "dvc.yaml"
+    >there give commands similar to main.py,ie.. give the pipelines path in order execution needed
+
+    >for running this dvc.yaml open the terminal goto the project folder location and activate chicken env 
+     first command to initialise dvc is "dvc init" , this command will create some files like ".dvcignore" and ".dvc" folder
+     now we can start the pipeline by giving the command "dvc repro" (delete artifacts and scores.json)
+    >you can tarck the execution logs in dvc.lock file
+
+    >d/f b/w using main.py and dvc.yaml to run the pipeline is you can track the executions and if the pipeline is once ran then it will not execute it (if we didnt delete the ingested files)
+    ie if we delete "data_ingestion" folder in artifacts and keep all other folders there dvc.yaml will execute only data_ingestion pipeline and skip other
+    
+
+
+20) if we want to show the Dag give command "dvc dag"
+
+
+21)now we want to setup prediction pipeline
+    >for that in the pipeline folder create a new file as "predict.py" (copy the code from ref rep)
+
+
+
+22)Next we will create a web app for taking inputs and showing result to public using Flask framework
+    
+    >for that create an "app.py" file in the main project directory and copy the code from ref rep/app.py for backend logic
+
+    >now open the index.html in the template folder and paste the code from ref rep for fron-end design
+    
+    >run "python app.py" and upload any image from chicken-fecal-images folder and click on predict button
+    >can see it will classify into either coccidiosis or healthy accordng to the image you gave
+
+
+23)now we will deploy this website using cicd-aws-pipeline
+
+    >for the we will dockerisation of entire code into docker image and that docker image is deployed in aws
+
+    >for that create "Dockerfile" folder in the mian project directory and paste the code from ref rep
+
+<<<<<<< HEAD
+    >to do the cicd deployment code create a "main.yaml" file in the .github folder
+=======
+    >to do the cicd deployment code create a "main.yaml" file in the .github folder and paste the code from ref rep
+
+
+24)cicd-AWS-deployment-github-integration ::
+
+    >create an iam user -- goto iam in the aws console
+
+        >IAM/users/Add users/give name (chicken)/Next/Attach policies directly/Search for "AmazonEC2ContainerREgsitryFullAccess"
+        and add it , also search for "AmazonEC2FullAccess" and add it/create user
+
+        >click on created user "chicken" and select security credentials/in Access key section click on Create Access key/
+        select CLI/click on Next/Create access key/download csv file (keep it in the out of project folder)
+
+    >now need to create ECR repository in the aws to store docker image
+
+        >for that search for ECR in aws/get started/repositories/keep as private/give name "chicken" in addition
+        /click on create repositories
+
+        >copy the URI of chicken rep created and paste in the README.md file line -Save the URU: ""
+    
+    >now need to create an EC2
+        
+        >now search for EC2/launch instance/give name as "chicken-machine"/select Ubuntu/select AMI a22.04 LTS,SSD Vol type free tier(default)
+        /need 16gb memory for instance type (bcs of deep learning) selectt2.xlarge/(create key-pair as chicken and save it)/
+        /select key-pair "chicken" /allow http and https from internet in internet settings/make 32 GiB in the configure storage/
+        /launch instance
+
+        >click on created ec2 chicken-machine/Connect/select EC2 instance connect/Connect/
+        in ther terminal showed give commands for cicd
+        
+            >sudo apt-get update -y
+            >sudo apt-get upgrade
+            >curl -fsSL https://get.docker.com -o get-docker.sh  (to install docker in my ec2 machine)
+            >sudo usermod -aG docker ubuntu
+            >newgrp docker
+            >docker --version (to check docker is working)
+
+    >now need to configure ec2 as self hosted runner 
+
+        >for that goto setting of your project repo in the git/Actions/Runners/New self hosted runner/
+        /select linux/copy the code displayed in the ec2 connect terminal and paste there one by one(total 5 command to copy)
+        (this is for connecting github with aws a/c)/press "enter" for default name/give "self-hosted" in the runner-name option and click enter/
+        /press enter to skip rest/copy the last command ie "./run.sh" and paste
+
+        give "./run.sh" to connect github and aws if you close the terminal bt ctrl+c
+
+    >now need to add github-secrets
+
+        >again goto project rep settings/secrets and variables/actions/new rep secrets/
+        /name: "AWS_ACCESS_KEY_ID" , secrets :"paste the secrets id from downloaded csv file/Add secrets
+
+        copy the name and scerets from README.md file/Setup github scerets  and paste there (total 5)
+
+        >confirm to push all update in the project to git rep and refresh the rep and click pn Actions/click on cicd added workflow 
+        >after completion of workflow goto instance "chicken-machine"/security/security Groups/Edit inbound rules/
+        /Add rule/give port range = 8080 and select 0.0.0.0 /0/Save rules
+        
+        >copy the public ip from ec2 "chicken machine" and search in a browser
+
+        >if you we need to train the model , for that give /train in addition to url ie .../8080/train and press enter
+         /after the training back to main page and upload image to predict
+
+
+
+
+
+        
+
+
+
+
+    
+
+>>>>>>> 4bdac87 (Fresh start of main branch)

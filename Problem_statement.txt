@@ -1,0 +1,1 @@
+if the chicken is affected by Coccidiosis disease it will die.Collected d/f chicken fecal images.By doing image classification need to classify them into affected or  not

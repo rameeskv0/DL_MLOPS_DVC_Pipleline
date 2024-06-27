@@ -1,0 +1,800 @@
+[2024-06-12 21:09:22,656: INFO: main: welcome to custom logging]
+[2024-06-13 12:19:11,021: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:19:11,023: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:19:11,023: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:19:11,023: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:23:18,746: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:23:18,747: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:23:18,748: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:23:18,748: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:24:21,238: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:24:21,240: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:24:21,240: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:24:21,240: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:31:53,190: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:31:53,191: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:31:53,192: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:31:53,192: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:38:32,055: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:38:32,057: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:38:32,057: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:38:32,057: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:39:59,204: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:39:59,205: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:39:59,206: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:39:59,206: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:47:37,579: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:47:37,581: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:47:37,581: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:47:37,581: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:49:42,439: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:49:42,441: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:49:42,441: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:49:42,441: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:51:10,192: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:51:10,194: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:51:10,194: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:51:10,195: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:53:11,100: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:53:11,102: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:53:11,102: ERROR: main: [Errno 2] No such file or directory: 'params.yaml']
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 38, in read_yaml
+    raise e
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 31, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'params.yaml'
+[2024-06-13 12:56:07,690: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:56:07,692: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:56:07,692: ERROR: main: [Errno 2] No such file or directory: 'params.yaml']
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 38, in read_yaml
+    raise e
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 31, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'params.yaml'
+[2024-06-13 12:56:44,579: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:56:44,581: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:56:44,581: ERROR: main: [Errno 2] No such file or directory: 'params.yaml']
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 38, in read_yaml
+    raise e
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 31, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'params.yaml'
+[2024-06-13 12:57:06,329: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:57:06,331: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:57:06,331: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:57:06,331: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    data_ingestion.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/config/configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "/home/ramees/anaconda3/envs/chicken/lib/python3.8/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/utils/common.py", line 36, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-13 12:57:46,456: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 12:57:46,458: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 12:57:46,459: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 12:57:46,459: INFO: common: created directory at: artifacts]
+[2024-06-13 12:57:46,459: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 12:58:31,603: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 940A:08C7:130731:18F87B:666A93D9
+Accept-Ranges: bytes
+Date: Thu, 13 Jun 2024 07:27:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10220-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1718263667.442820,VS0,VE253
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: de32534bba926fb6ea0f893b2b21d7a4fd4c5565
+Expires: Thu, 13 Jun 2024 07:32:47 GMT
+Source-Age: 0
+
+]
+[2024-06-13 12:58:31,669: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:11:14,177: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 16:11:14,179: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:11:14,179: INFO: common: created directory at: artifacts]
+[2024-06-13 16:11:14,184: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-13 16:11:19,451: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-13 16:47:53,536: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:47:53,537: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 16:47:53,538: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:47:53,539: INFO: common: created directory at: artifacts]
+[2024-06-13 16:47:53,539: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:48:01,154: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: F714:96EE0:7C81A:95204:666AD566
+Accept-Ranges: bytes
+Date: Thu, 13 Jun 2024 11:18:00 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10229-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1718277479.408071,VS0,VE1284
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e7bb70808d4b67918d221778c574c9be281cc550
+Expires: Thu, 13 Jun 2024 11:23:00 GMT
+Source-Age: 1
+
+]
+[2024-06-13 16:48:01,207: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:48:01,207: INFO: main: *******************]
+[2024-06-13 16:48:01,207: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-13 16:48:01,208: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 16:48:01,209: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:48:01,210: INFO: common: created directory at: artifacts]
+[2024-06-13 16:48:01,210: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-13 16:48:01,489: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-13 16:48:01,625: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-13 21:19:49,281: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 21:19:49,289: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 21:19:49,291: INFO: common: created directory at: artifacts]
+[2024-06-13 21:19:49,291: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 21:19:49,292: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 21:21:05,366: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 21:21:05,368: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 21:21:05,369: INFO: common: created directory at: artifacts]
+[2024-06-13 21:21:05,370: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 21:21:05,370: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 21:57:09,185: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 21:57:09,187: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 21:57:09,187: INFO: common: created directory at: artifacts]
+[2024-06-13 21:57:09,188: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 21:57:09,188: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 22:20:02,062: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 22:20:02,064: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 22:20:02,065: INFO: common: created directory at: artifacts]
+[2024-06-13 22:20:02,066: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 22:20:02,066: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 22:24:31,370: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 22:24:31,372: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 22:24:31,373: INFO: common: created directory at: artifacts]
+[2024-06-13 22:24:31,374: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 22:24:31,374: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 22:24:51,729: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 22:24:51,732: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 22:24:51,733: INFO: common: created directory at: artifacts]
+[2024-06-13 22:24:51,733: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 22:24:51,734: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 22:25:40,802: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 22:25:40,806: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 22:25:40,807: INFO: common: created directory at: artifacts]
+[2024-06-13 22:25:40,808: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 22:25:40,808: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 22:25:46,396: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 22:25:46,399: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 22:25:46,399: INFO: common: created directory at: artifacts]
+[2024-06-13 22:25:46,400: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 22:25:46,400: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 22:26:35,380: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 22:26:35,383: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 22:26:35,384: INFO: common: created directory at: artifacts]
+[2024-06-13 22:26:35,385: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 22:26:35,386: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 22:32:25,165: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-13 22:32:25,168: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 22:32:25,169: INFO: common: created directory at: artifacts]
+[2024-06-13 22:32:25,170: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-13 22:32:25,170: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-13 22:32:25,171: INFO: common: created directory at: artifacts/training]
+[2024-06-14 12:25:11,291: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-14 12:25:11,293: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:25:11,294: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:25:11,295: INFO: common: created directory at: artifacts]
+[2024-06-14 12:25:11,295: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-14 12:25:47,288: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2645:12CE56:5922:689C:666BE950
+Accept-Ranges: bytes
+Date: Fri, 14 Jun 2024 06:55:13 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100031-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1718348112.442078,VS0,VE996
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 749ff811b814d93b54999ca6397d301737b42d64
+Expires: Fri, 14 Jun 2024 07:00:13 GMT
+Source-Age: 1
+
+]
+[2024-06-14 12:25:47,343: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-14 12:25:47,343: INFO: main: *******************]
+[2024-06-14 12:25:47,343: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-14 12:25:47,344: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:25:47,345: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:25:47,345: INFO: common: created directory at: artifacts]
+[2024-06-14 12:25:47,345: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-14 12:25:47,647: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 12:25:47,782: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-14 12:25:47,782: INFO: main: *******************]
+[2024-06-14 12:25:47,782: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-06-14 12:25:47,784: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:25:47,785: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:25:47,786: INFO: common: created directory at: artifacts]
+[2024-06-14 12:25:47,786: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-14 12:25:47,786: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-14 12:25:47,792: INFO: common: created directory at: artifacts/training]
+[2024-06-14 12:26:13,755: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-06-14 12:35:28,996: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:35:28,999: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:35:29,000: INFO: common: created directory at: artifacts]
+[2024-06-14 12:35:38,668: INFO: common: json file saved at: scores.json]
+[2024-06-14 12:43:46,340: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-14 12:43:46,341: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:43:46,342: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:43:46,343: INFO: common: created directory at: artifacts]
+[2024-06-14 12:43:46,343: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-14 12:43:48,606: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2645:12CE56:5922:689C:666BE950
+Accept-Ranges: bytes
+Date: Fri, 14 Jun 2024 07:13:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100026-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1718349227.894810,VS0,VE268
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 259ee905c4e5cf6615b6f8e5af5352dda9fd6e35
+Expires: Fri, 14 Jun 2024 07:18:47 GMT
+Source-Age: 0
+
+]
+[2024-06-14 12:43:48,669: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-14 12:43:48,669: INFO: main: *******************]
+[2024-06-14 12:43:48,669: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-14 12:43:48,670: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:43:48,671: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:43:48,671: INFO: common: created directory at: artifacts]
+[2024-06-14 12:43:48,671: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-14 12:43:48,985: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 12:43:49,136: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-14 12:43:49,136: INFO: main: *******************]
+[2024-06-14 12:43:49,137: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-06-14 12:43:49,138: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:43:49,139: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:43:49,139: INFO: common: created directory at: artifacts]
+[2024-06-14 12:43:49,139: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-14 12:43:49,139: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-14 12:43:49,140: INFO: common: created directory at: artifacts/training]
+[2024-06-14 12:44:15,914: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-06-14 12:44:15,914: INFO: main: *******************]
+[2024-06-14 12:44:15,914: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-06-14 12:44:15,916: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:44:15,917: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:44:15,917: INFO: common: created directory at: artifacts]
+[2024-06-14 12:44:16,145: ERROR: main: name 'model' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    model_evalution.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_04_evaluation.py", line 19, in main
+    evaluation.evaluation()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/components/evaluation.py", line 47, in evaluation
+    self.score = model.evaluate(self.valid_generator)
+NameError: name 'model' is not defined
+[2024-06-14 12:49:20,616: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-14 12:49:20,618: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:49:20,619: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:49:20,619: INFO: common: created directory at: artifacts]
+[2024-06-14 12:49:20,619: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-14 12:49:24,757: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3372:133536:C03D:E25E:666BEEF9
+Accept-Ranges: bytes
+Date: Fri, 14 Jun 2024 07:19:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4736-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1718349561.240921,VS0,VE964
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: ebd11e02b2e76264a90183388848f63d9cb5ec5f
+Expires: Fri, 14 Jun 2024 07:24:22 GMT
+Source-Age: 1
+
+]
+[2024-06-14 12:49:24,812: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-14 12:49:24,812: INFO: main: *******************]
+[2024-06-14 12:49:24,812: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-14 12:49:24,813: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:49:24,814: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:49:24,814: INFO: common: created directory at: artifacts]
+[2024-06-14 12:49:24,814: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-14 12:49:25,101: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 12:49:25,232: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-14 12:49:25,233: INFO: main: *******************]
+[2024-06-14 12:49:25,233: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-06-14 12:49:25,234: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:49:25,235: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:49:25,235: INFO: common: created directory at: artifacts]
+[2024-06-14 12:49:25,235: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-14 12:49:25,235: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-14 12:49:25,236: INFO: common: created directory at: artifacts/training]
+[2024-06-14 12:49:51,292: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-06-14 12:49:51,292: INFO: main: *******************]
+[2024-06-14 12:49:51,292: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-06-14 12:49:51,293: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:49:51,294: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:49:51,294: INFO: common: created directory at: artifacts]
+[2024-06-14 12:49:51,493: ERROR: main: name 'model' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    model_evalution.main()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/pipeline/stage_04_evaluation.py", line 19, in main
+    evaluation.evaluation()
+  File "/home/ramees/DL_MLOPS_DVC_Pipleline/src/cnnClassifier/components/evaluation.py", line 47, in evaluation
+    self.score = model.evaluate(self.valid_generator)
+NameError: name 'model' is not defined
+[2024-06-14 12:57:41,729: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-14 12:57:41,730: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:57:41,731: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:57:41,732: INFO: common: created directory at: artifacts]
+[2024-06-14 12:57:41,732: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-14 12:57:43,976: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3372:133536:C03D:E25E:666BEEF9
+Accept-Ranges: bytes
+Date: Fri, 14 Jun 2024 07:27:42 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4733-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1718350062.416213,VS0,VE249
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 43ebbd7e928d38680ddadd99703173432176c695
+Expires: Fri, 14 Jun 2024 07:32:42 GMT
+Source-Age: 0
+
+]
+[2024-06-14 12:57:44,025: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-14 12:57:44,025: INFO: main: *******************]
+[2024-06-14 12:57:44,025: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-14 12:57:44,027: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:57:44,028: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:57:44,028: INFO: common: created directory at: artifacts]
+[2024-06-14 12:57:44,028: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-14 12:57:44,310: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 12:57:44,441: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-14 12:57:44,441: INFO: main: *******************]
+[2024-06-14 12:57:44,441: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-06-14 12:57:44,442: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:57:44,443: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:57:44,444: INFO: common: created directory at: artifacts]
+[2024-06-14 12:57:44,444: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-14 12:57:44,444: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-14 12:57:44,449: INFO: common: created directory at: artifacts/training]
+[2024-06-14 12:58:10,655: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-06-14 12:58:10,655: INFO: main: *******************]
+[2024-06-14 12:58:10,655: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-06-14 12:58:10,657: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 12:58:10,658: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 12:58:10,658: INFO: common: created directory at: artifacts]
+[2024-06-14 12:58:19,549: INFO: common: json file saved at: scores.json]
+[2024-06-14 12:58:19,549: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-06-21 20:09:33,913: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-21 20:09:33,914: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-21 20:09:33,916: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-21 20:09:33,916: INFO: common: created directory at: artifacts]
+[2024-06-21 20:09:33,916: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-21 20:09:36,903: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: C089:11D237:25E17:2E2EE:667590A5
+Accept-Ranges: bytes
+Date: Fri, 21 Jun 2024 14:39:35 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100022-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1718980774.463706,VS0,VE921
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 6bf83358ff2a014eecefcebd799520e39d396576
+Expires: Fri, 21 Jun 2024 14:44:35 GMT
+Source-Age: 1
+
+]
+[2024-06-21 20:09:36,959: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-21 20:10:22,880: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-21 20:10:22,881: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-21 20:10:22,882: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-21 20:10:22,883: INFO: common: created directory at: artifacts]
+[2024-06-21 20:10:22,883: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-21 20:10:24,569: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: C089:11D237:25E17:2E2EE:667590A5
+Accept-Ranges: bytes
+Date: Fri, 21 Jun 2024 14:40:23 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100033-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1718980823.173024,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 1528f081aadf8dab945c888709eb7d6ac994be63
+Expires: Fri, 21 Jun 2024 14:45:23 GMT
+Source-Age: 48
+
+]
+[2024-06-21 20:10:24,621: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-21 20:57:20,095: INFO: stage_02_prepare_base_model: *******************]
+[2024-06-21 20:57:20,095: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-21 20:57:20,097: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-21 20:57:20,098: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-21 20:57:20,098: INFO: common: created directory at: artifacts]
+[2024-06-21 20:57:20,098: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-21 20:57:20,408: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-21 20:57:20,565: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-21 20:57:22,884: INFO: stage_03_training: *******************]
+[2024-06-21 20:57:22,885: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-06-21 20:57:22,886: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-21 20:57:22,887: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-21 20:57:22,887: INFO: common: created directory at: artifacts]
+[2024-06-21 20:57:22,887: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-06-21 20:57:22,887: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-06-21 20:57:22,888: INFO: common: created directory at: artifacts/training]
+[2024-06-21 20:57:52,671: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-06-21 20:58:02,405: INFO: stage_04_evaluation: *******************]
+[2024-06-21 20:58:02,405: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-06-21 20:58:02,407: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-21 20:58:02,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-21 20:58:02,408: INFO: common: created directory at: artifacts]
+[2024-06-21 20:58:12,135: INFO: common: json file saved at: scores.json]
+[2024-06-21 20:58:12,135: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-06-21 21:39:16,950: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.16:8080]
+[2024-06-21 21:39:16,950: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-21 21:39:57,288: INFO: _internal: 192.168.1.16 - - [21/Jun/2024 21:39:57] "GET / HTTP/1.1" 200 -]
+[2024-06-21 21:40:31,446: INFO: _internal: 192.168.1.16 - - [21/Jun/2024 21:40:31] "POST /predict HTTP/1.1" 200 -]
