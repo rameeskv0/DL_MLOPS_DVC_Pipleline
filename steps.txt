@@ -230,7 +230,7 @@ from notebook experiment then if it is succesfull , do it in modular coding,and 
         >for that search for ECR in aws/get started/repositories/keep as private/give name "chicken" in addition
         /click on create repositories
 
-        >copy the URI of chicken rep created and paste in the README.md file line -Save the URU: ""
+        >copy the URI of chicken rep created and paste in the README.md file line -Save the URI: ""
     
     >now need to create an EC2
         
