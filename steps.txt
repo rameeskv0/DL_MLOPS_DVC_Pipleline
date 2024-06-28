@@ -266,7 +266,7 @@ from notebook experiment then if it is succesfull , do it in modular coding,and 
 
         copy the name and scerets from README.md file/Setup github scerets  and paste there (total 5)
 
-        >confirm to push all update in the project to git rep and refresh the rep and click pn Actions/click on cicd added workflow 
+        >confirm to push all update in the project to git rep and refresh the rep and click on Actions/click on cicd added workflow 
         >after completion of workflow goto instance "chicken-machine"/security/security Groups/Edit inbound rules/
         /Add rule/give port range = 8080 and select 0.0.0.0 /0/Save rules
         
