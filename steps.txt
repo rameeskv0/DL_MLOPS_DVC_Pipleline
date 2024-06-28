@@ -235,7 +235,7 @@ from notebook experiment then if it is succesfull , do it in modular coding,and 
     >now need to create an EC2
         
         >now search for EC2/launch instance/give name as "chicken-machine"/select Ubuntu/select AMI a22.04 LTS,SSD Vol type free tier(default)
-        /need 16gb memory for instance type (bcs of deep learning) selectt2.xlarge/(create key-pair as chicken and save it)/
+        /need 16gb memory for instance type (bcs of deep learning) selectt 2xlarge/(create key-pair as chicken and save it)/
         /select key-pair "chicken" /allow http and https from internet in internet settings/make 32 GiB in the configure storage/
         /launch instance
 
@@ -245,6 +245,7 @@ from notebook experiment then if it is succesfull , do it in modular coding,and 
             >sudo apt-get update -y
             >sudo apt-get upgrade
             >curl -fsSL https://get.docker.com -o get-docker.sh  (to install docker in my ec2 machine)
+            >sudo sh get-docker.sh
             >sudo usermod -aG docker ubuntu
             >newgrp docker
             >docker --version (to check docker is working)
@@ -252,11 +253,11 @@ from notebook experiment then if it is succesfull , do it in modular coding,and 
     >now need to configure ec2 as self hosted runner 
 
         >for that goto setting of your project repo in the git/Actions/Runners/New self hosted runner/
-        /select linux/copy the code displayed in the ec2 connect terminal and paste there one by one(total 5 command to copy)
+        /select linux/copy the code displayed there back in the ec2 connect terminal and paste there one by one(total 5 command to copy)
         (this is for connecting github with aws a/c)/press "enter" for default name/give "self-hosted" in the runner-name option and click enter/
         /press enter to skip rest/copy the last command ie "./run.sh" and paste
 
-        give "./run.sh" to connect github and aws if you close the terminal bt ctrl+c
+        give "./run.sh" to connect github and aws , and if you close the terminal bt ctrl+c
 
     >now need to add github-secrets
 
